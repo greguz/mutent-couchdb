@@ -1,6 +1,6 @@
 {
   "name": "mutent-couchdb",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CouchDB adapter for Mutent",
   "type": "module",
   "main": "./mutent-couchdb.cjs",
