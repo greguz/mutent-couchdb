@@ -1,0 +1,6 @@
+.*
+!.gitignore
+mutent-counchdb.cjs
+node_modules
+package-lock.json
+*.tgz

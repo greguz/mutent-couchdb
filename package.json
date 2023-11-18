@@ -1,0 +1,39 @@
+{
+  "name": "mutent-couchdb",
+  "version": "0.0.0",
+  "description": "CouchDB adapter for Mutent",
+  "type": "module",
+  "main": "./mutent-couchdb.cjs",
+  "types": "./mutent-couchdb.d.ts",
+  "exports": {
+    "import": "./mutent-couchdb.mjs",
+    "require": "./mutent-couchdb.cjs",
+    "types": "./mutent-couchdb.d.ts"
+  },
+  "files": [
+    "mutent-couchdb.cjs",
+    "mutent-couchdb.d.ts",
+    "mutent-couchdb.mjs"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "standard **/*.mjs",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "keywords": [
+    "mutent",
+    "adapter",
+    "couch",
+    "couchdb"
+  ],
+  "author": "Giacomo Gregoletto",
+  "license": "MIT",
+  "dependencies": {
+    "nano": "^10.1.3"
+  },
+  "devDependencies": {
+    "mutent": "^5.1.0",
+    "rollup": "^4.5.0",
+    "standard": "^17.1.0"
+  }
+}
