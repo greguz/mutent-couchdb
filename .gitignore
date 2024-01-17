@@ -1,6 +1,6 @@
 .*
 !.gitignore
-mutent-counchdb.cjs
+mutent-couchdb.cjs
 node_modules
 package-lock.json
 *.tgz
