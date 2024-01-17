@@ -109,7 +109,8 @@ export default class CouchAdapter {
         limit: page,
         reduce: false,
         skip,
-        startkey: query.startkey
+        startkey: query.startkey,
+        endkey: query.endkey
       })
 
       for (const row of response.rows) {
