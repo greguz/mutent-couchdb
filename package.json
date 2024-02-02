@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "mutent": "^5.1.0",
-    "rollup": "^4.5.0",
+    "rollup": "^4.9.6",
     "standard": "^17.1.0"
   }
 }

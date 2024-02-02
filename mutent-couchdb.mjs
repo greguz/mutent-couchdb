@@ -114,8 +114,11 @@ export default class CouchAdapter {
       })
 
       for (const row of response.rows) {
-        skip++
-        yield row.doc
+        // TODO: this seems to be a couchdb bug (doc shouldn't be null)
+        if (row.doc) {
+          skip++
+          yield row.doc
+        }
       }
 
       if (response.rows.length < page) {
